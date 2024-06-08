@@ -13,6 +13,7 @@
     --testColor:#C3C3C3;
     --table-input-width:100px;
     --dropdown-width:185px;
+    --main-height:calc(100dvh - 230px);
 }
 body{
     font-family: "Josefin Sans", sans-serif;
@@ -27,6 +28,7 @@ body{
     /* padding: var(--grid-gap); */
     /* padding-bottom: 0; */
 }
+
 
 .flex-wrapper{
     gap: var(--grid-gap);
@@ -81,6 +83,9 @@ body{
 }
 .logo{
     width: var( --sidepanel-width);
+}
+main{
+    min-height: var(--main-height);
 }
 
 .header{
@@ -342,4 +347,122 @@ table .filterDropdown{
 .totalEntries{
     font-size: 12px;
     color: var(--muted-color);
+}
+
+.searchDropdown{
+    padding: 60px 36px !important;
+    border: 1px solid #C9C9C9;
+    box-shadow: 4px 4px 16px 0px #0000001F;
+    border-radius: 8px;
+    .uk-close{
+        --size:28px;
+        width: var(--size);
+        height: var(--size);
+        border-radius: var(--size);
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #D9D9D9;
+        color: white;
+        &:hover{
+            background: #C9C9C9;
+            color: white;
+        }
+    }
+    .imgBox img{
+        width: 262px;
+        height: 176px;
+        object-fit: cover;
+    }
+
+    .text{
+        font-size: 11px;
+        font-weight: 400;
+        color: #929291;
+    }
+    .uk-accordion {
+        .uk-accordion-title{
+            font-size: 16px;
+            font-weight: 400;
+            color: #373736;
+            border-bottom: 1px solid #373736;
+            padding-bottom: 10px;
+        }
+    }
+    
+    .uk-nav{
+        a{
+            font-size: 12px;
+            font-weight: 400;
+            color: #000;
+        }
+    }
+}
+
+.uk-accordion.arrow {
+    .uk-accordion-title::before{
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 0 32 32'%3E%3Cpath fill='%23000' d='M4.219 10.781L2.78 12.22l12.5 12.5l.719.687l.719-.687l12.5-12.5l-1.438-1.438L16 22.562z'/%3E%3C/svg%3E");
+    }
+    .uk-open>.uk-accordion-title::before{
+        transform: rotate(180deg);
+    }
+    
+}
+
+.artwork-wrapper.uk-grid{
+    margin: 0;
+    padding: 20px;
+}
+.artwork-wrapper{
+    --size-grid-item:277px;
+    gap: 23px;
+    background: white;
+    padding: 20px;
+    border-radius: var(--radius);
+    &.tileview{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(var(--size-grid-item), 1fr));
+    }
+
+    .grid-item{
+        position: relative;
+        display: grid;
+        flex: 1 0 var(--size-grid-item);
+        grid-template-columns: 1fr;
+        gap: 17px;
+        padding: 12px;
+        background: #F8F8F8;
+        max-width: var(--size-grid-item);
+        border-radius: var(--radius);
+        border: 1px solid #E3E3E3;
+        .img-div{
+            height: 144px;
+            border-radius: calc(var(--radius) / 2);
+            overflow: hidden;
+            img{
+                object-fit: cover;
+               
+            }
+        }
+        .flag{
+            position: absolute;
+            left: 16px;
+            bottom: 16px;
+            width: 14px;
+        }
+        .ul-list{
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+            li{
+                margin: 0;
+                font-size: 14px;
+
+            }
+        }
+    }
 }

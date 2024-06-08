@@ -27,7 +27,7 @@
     </head>
     <body>
 
-        <div class="wrapper flex-wrapper">
+        <div class="wrapper grid-wrapper">
             <!---------- logo ----------------->
             <div class="logo">
                 <img src="assets/logo.png" />
@@ -109,7 +109,53 @@
                         <button class="btn btn-outline-light navbar-search" type="button">
                             <i class="bi bi-search icon"></i>
                         </button>
-                        <div class="uk-card uk-card-body uk-card-default" uk-drop="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+                        <div class="searchDropdown uk-card uk-card-body uk-card-default" uk-drop="mode: click;pos:top-right">
+                            <button class="uk-drop-close" type="button" uk-close></button>
+                            <div class="imgBox">
+                                <img src="assets/2.jpg" alt="" class="img-fluid">
+                                <p class="text">RIW-789, SANDOR SANDSTRÖM SAND, HUVUDET I SANDEN</p>
+                            </div>
+                            <ul uk-accordion class="arrow">
+                                <li>
+                                    <a class="uk-accordion-title" href>GENERELLT</a>
+                                    <div class="uk-accordion-content">
+                                        <ul class="uk-nav">
+                                            <li><a href="#" class="navlink">Sandor Sandström Sand</a></li>
+                                            <li><a href="#" class="navlink">Huvudet i sanden</a></li>
+                                            <li><a href="#" class="navlink">1979</a></li>
+                                            <li><a href="#" class="navlink">Fotografi</a></li>
+                                            <li><a href="#" class="navlink">C-print med aluminiumram</a></li>
+                                            <li><a href="#" class="navlink">32 x 32 cm</a></li>
+                                            <li><a href="#" class="navlink">2/75</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="uk-accordion-title" href>DETALJER</a>
+                                    <div class="uk-accordion-content">
+                                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="uk-accordion-title" href>PLACERING</a>
+                                    <div class="uk-accordion-content">
+                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="uk-accordion-title" href>ΕΚΟΝΟΜΙ</a>
+                                    <div class="uk-accordion-content">
+                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="uk-accordion-title" href>ÖVRIGT</a>
+                                    <div class="uk-accordion-content">
+                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </nav>
             </header>
