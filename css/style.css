@@ -11,6 +11,7 @@
     --radius: 8px;
     --colorLight:#C3C3C3;
     --testColor:#C3C3C3;
+    --table-input-width:146px;
 }
 body{
     font-family: "Josefin Sans", sans-serif;
@@ -224,6 +225,7 @@ body{
             border-radius: 5px;
             border-width: 1px;
             border-color: #8E8E8E;
+            min-width: var(--table-input-width);
         }
         .uk-form-icon{
             width:var(--input-height) ;
