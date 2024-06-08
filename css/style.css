@@ -11,7 +11,8 @@
     --radius: 8px;
     --colorLight:#C3C3C3;
     --testColor:#C3C3C3;
-    --table-input-width:146px;
+    --table-input-width:100px;
+    --dropdown-width:185px;
 }
 body{
     font-family: "Josefin Sans", sans-serif;
@@ -51,12 +52,16 @@ body{
         flex: 1;
     }
 }
-.gridWrapper{
+.grid-wrapper{
     display: grid;
     grid-template-columns: var(--sidepanel-width) 1fr;
     grid-template-rows: 80px 1fr;
     grid-template-areas: "logo header" "sidebar main" "footer footer";
     gap: var(--grid-gap);
+    max-width: 1920px;
+    padding-block: 36px;
+    padding-inline: 56px;
+    padding-bottom: 20px;
     .logo{
         grid-area: logo;
     }
@@ -74,6 +79,10 @@ body{
 .uk-navbar-nav>li>a{
     color: var(--text-color) !important;
 }
+.logo{
+    width: var( --sidepanel-width);
+}
+
 .header{
     
     display: flex;
@@ -92,12 +101,14 @@ body{
         }
     }
 }
+
 .mainmenu{
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     gap:40px;
+  
     .navbar-search{
         width: 52px;
         height: 52px;
@@ -105,7 +116,7 @@ body{
     .uk-navbar{
         width: 100%;
     }
-
+    
     .uk-navbar-nav{
         justify-content: space-between;
         width: 100%;
@@ -133,8 +144,38 @@ body{
     }
   
 }
-.logo{
-    width: var( --sidepanel-width);
+.filterDropdown{
+    padding: 13px !important;
+    border: 1px solid #C9C9C9;
+    border-radius: 4px;
+    min-width: var(--dropdown-width) !important;
+    box-shadow: 4px 4px 12px 0px #00000029;
+    &::before{
+        content: '';
+        position: absolute;
+        filter: drop-shadow(-0px -1px 1px #00000050);
+        bottom: 100%;
+        right: auto;
+        left: auto;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: 10px solid #fff;
+    }
+    .uk-nav{
+        padding: 0;
+        >li>a{
+            font-size: 12px ;
+            font-weight: 500;
+        }
+    }
+    
+}
+table .filterDropdown{
+    &::before{
+        bottom: 100%;
+        right:50%;
+        left: auto;
+    }
 }
 
 .sidebar{
@@ -234,6 +275,7 @@ body{
             padding-right: var(--input-height) !important;
         }
     }
+    
     tbody{
         tr{
             align-items: center;
