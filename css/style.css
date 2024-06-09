@@ -415,6 +415,9 @@ table .filterDropdown{
 .artwork-wrapper.uk-grid{
     margin: 0;
     padding: 20px;
+    .uk-grid-margin{
+        margin: 0;
+    }
 }
 .artwork-wrapper{
     --size-grid-item:277px;
@@ -430,12 +433,12 @@ table .filterDropdown{
     .grid-item{
         position: relative;
         display: grid;
-        flex: 1 0 var(--size-grid-item);
+        /* flex: 1 0 var(--size-grid-item); */
         grid-template-columns: 1fr;
         gap: 17px;
         padding: 12px;
         background: #F8F8F8;
-        max-width: var(--size-grid-item);
+        /* max-width: var(--size-grid-item); */
         border-radius: var(--radius);
         border: 1px solid #E3E3E3;
         .img-div{
