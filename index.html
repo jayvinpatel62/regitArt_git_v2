@@ -29,13 +29,19 @@
 
         <div class="wrapper grid-wrapper">
             <!---------- logo ----------------->
-            <a href="index.html" class="logo">
-                <img src="assets/logo.png" />
-            </a>
+           <div class="logo-wrapper">
+                <button class="btn toggleSidebar">
+                    <i class="bi bi-list"></i>
+                </button>
+                <a href="index.html" class="logo">
+                    <img src="assets/logo.png" />
+                </a>
+           </div>
             <!---------- header ----------------->
             <header class="header">
                 <nav class="mainmenu px-3 py-2">
-                    <div uk-navbar>
+                    <div class="filter-uk-navbar" >
+                        <button class="uk-drop-close closeFilter" type="button" uk-close></button>
                         <ul class="uk-navbar-nav">
                             <li class="uk-active">
                                 <a href="#" class="navlink">
@@ -104,7 +110,7 @@
                             </a></li>
                         </ul>
                     </div>
-                   
+                    <button class="btn btn-white btn-filterhead">Filter  <i class="bi bi-sliders2"></i></button>
                     <div class="uk-inline">
                         <button class="btn btn-outline-light navbar-search" type="button">
                             <i class="bi bi-search icon"></i>
@@ -115,6 +121,7 @@
             </header>
             <!---------- sidebar ----------------->
             <aside class="sidebar">
+                <button class="uk-drop-close closeSidebar" type="button" uk-close></button>
                 <a href="" class="notifiaction-icon">
                     <!-- <i class="bi bi-bell"></i> -->
                     <img src="assets/icons/bell.png" class="img-fluid" style="width: 30px;" />

@@ -8,6 +8,21 @@ $('.closeDialog').click(function(){
   $('.my-table-model').hide();
 });
 
+
+$('.btn-filterhead').click(function(){
+  $('body').toggleClass('open-Filter-sidebar');
+});
+$('.closeFilter').click(function(){
+  $('body').toggleClass('open-Filter-sidebar');
+});
+
+$('.toggleSidebar').click(function(){
+  $('body').toggleClass('open-main-sidebar');
+});
+$('.closeSidebar').click(function(){
+  $('body').toggleClass('open-main-sidebar');
+});
+
 const ctx = document.getElementById('myChart');
 const data = {
   labels: ['Aktiv', 'Uilanad', 'Lager', 'Restaureras', 'Makulerad'],
