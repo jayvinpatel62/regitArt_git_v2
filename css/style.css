@@ -60,7 +60,7 @@ body{
 }
 .overview-page{
     .grid-wrapper{
-        grid-template-areas: "logo main" "sidebar main" "footer footer";
+        grid-template-areas: "logo-wrapper main" "sidebar main" "footer footer";
     }
 }
 .grid-wrapper{
@@ -822,6 +822,10 @@ table .filterDropdown{
         right: 15px;
         top: 15px;
     }
+    .grid-wrapper {
+        padding-block: 15px;
+        padding-inline: 15px;
+    }
     .filter-uk-navbar{
         position: fixed;
         height: 100dvh;
@@ -868,6 +872,11 @@ table .filterDropdown{
         display: grid;
         grid-template-areas: "logo-wrapper header" "main main" "footer footer";
     }
+    .overview-page{
+        .grid-wrapper{
+            grid-template-areas: "logo-wrapper logo-wrapper" "main main" "footer footer";
+        }
+    }
 }
 @media (min-width: 1600px) {
     .btn-filterhead{
@@ -894,3 +903,4 @@ table .filterDropdown{
 .btn-white{
     background: white !important;
 }
+

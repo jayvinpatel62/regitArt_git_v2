@@ -29,12 +29,17 @@
 
         <div class="wrapper grid-wrapper">
             <!---------- logo ----------------->
-            <a href="index.html" class="logo">
-                <img src="assets/logo.png" />
-            </a>
-           
+            <div class="logo-wrapper">
+                <button class="btn toggleSidebar">
+                    <i class="bi bi-list"></i>
+                </button>
+                <a href="index.html" class="logo">
+                    <img src="assets/logo.png" />
+                </a>
+           </div>
             <!---------- sidebar ----------------->
             <aside class="sidebar">
+                <button class="uk-drop-close closeSidebar" type="button" uk-close></button>
                 <a href="" class="notifiaction-icon">
                     <!-- <i class="bi bi-bell"></i> -->
                     <img src="assets/icons/bell.png" class="img-fluid" style="width: 30px;" />
