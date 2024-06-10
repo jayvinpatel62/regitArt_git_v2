@@ -29,9 +29,9 @@
 
         <div class="wrapper grid-wrapper">
             <!---------- logo ----------------->
-            <div class="logo">
+            <a href="index.html" class="logo">
                 <img src="assets/logo.png" />
-            </div>
+            </a>
             <!---------- header ----------------->
             <header class="header">
                 <nav class="mainmenu px-3 py-2">
@@ -109,53 +109,7 @@
                         <button class="btn btn-outline-light navbar-search" type="button">
                             <i class="bi bi-search icon"></i>
                         </button>
-                        <div class="searchDropdown uk-card uk-card-body uk-card-default" uk-drop="mode: click;pos:top-right">
-                            <button class="uk-drop-close" type="button" uk-close></button>
-                            <div class="imgBox">
-                                <img src="assets/2.jpg" alt="" class="img-fluid">
-                                <p class="text">RIW-789, SANDOR SANDSTRÖM SAND, HUVUDET I SANDEN</p>
-                            </div>
-                            <ul uk-accordion class="arrow">
-                                <li>
-                                    <a class="uk-accordion-title" href>GENERELLT</a>
-                                    <div class="uk-accordion-content">
-                                        <ul class="uk-nav">
-                                            <li><a href="#" class="navlink">Sandor Sandström Sand</a></li>
-                                            <li><a href="#" class="navlink">Huvudet i sanden</a></li>
-                                            <li><a href="#" class="navlink">1979</a></li>
-                                            <li><a href="#" class="navlink">Fotografi</a></li>
-                                            <li><a href="#" class="navlink">C-print med aluminiumram</a></li>
-                                            <li><a href="#" class="navlink">32 x 32 cm</a></li>
-                                            <li><a href="#" class="navlink">2/75</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a class="uk-accordion-title" href>DETALJER</a>
-                                    <div class="uk-accordion-content">
-                                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a class="uk-accordion-title" href>PLACERING</a>
-                                    <div class="uk-accordion-content">
-                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a class="uk-accordion-title" href>ΕΚΟΝΟΜΙ</a>
-                                    <div class="uk-accordion-content">
-                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a class="uk-accordion-title" href>ÖVRIGT</a>
-                                    <div class="uk-accordion-content">
-                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                        
                     </div>
                 </nav>
             </header>
@@ -167,9 +121,9 @@
                 </a>
                <div class="offset-sidebar">
                     <ul class="uk-nav uk-nav-default" uk-nav>
-                        <li class="item"><a href="#">Overview</a></li>
+                        <li class="item"><a href="overview.html">Overview</a></li>
                         <li class="item uk-parent uk-open">
-                            <a class="uk-active" href="#">Artworks</a>
+                            <a class="uk-active" href="artwork_tileview.html">Artworks</a>
                             <ul class="uk-nav-sub">
                                 <li class="sub-item"><a href="#">HISTORIK</a></li>
                                 <li class="sub-item"><a href="#">PAPPERSKORG</a></li>
@@ -196,8 +150,8 @@
             <main class="main">
                <div class="innerBetween">
                     <!---------- table ----------------->
-                    <div class="table-responsive">
-                        <table class="table table-striped">
+                    <div class="uk-overflow-auto table-parent position-relative">
+                        <table class="uk-table uk-table-striped my-table">
                         <thead>
                             <tr>
                                 <th class="flag">
@@ -373,9 +327,9 @@
                             </tr>
                         </thead>
                         <tbody uk-lightbox="animation: slide">
-                            <tr>
+                            <tr class="tr-click-model">
                                 <td>
-                                    <div class="flagDiv">
+                                    <div class="flagDiv tr-click-model">
                                         <img src="assets/icons/flag.png" alt="" class="img-fluid">
                                     </div>
                                 </td>
@@ -401,6 +355,7 @@
                                 <td class="text-center">
                                     <input class="uk-checkbox" type="checkbox" checked>
                                 </td>
+                               
                             </tr>
                             <tr>
                                 <td>
@@ -694,6 +649,54 @@
                             </tr>
                         </tbody>
                         </table>
+
+                        <div class="my-table-model">
+                            <button class="uk-drop-close closeDialog" type="button" uk-close></button>
+                            <div class="imgBox">
+                                <img src="assets/2.jpg" alt="" class="img-fluid">
+                                <p class="text">RIW-789, SANDOR SANDSTRÖM SAND, HUVUDET I SANDEN</p>
+                            </div>
+                            <ul uk-accordion class="arrow">
+                                <li>
+                                    <a class="uk-accordion-title" href>GENERELLT</a>
+                                    <div class="uk-accordion-content">
+                                        <ul class="uk-nav">
+                                            <li><a href="#" class="navlink">Sandor Sandström Sand</a></li>
+                                            <li><a href="#" class="navlink">Huvudet i sanden</a></li>
+                                            <li><a href="#" class="navlink">1979</a></li>
+                                            <li><a href="#" class="navlink">Fotografi</a></li>
+                                            <li><a href="#" class="navlink">C-print med aluminiumram</a></li>
+                                            <li><a href="#" class="navlink">32 x 32 cm</a></li>
+                                            <li><a href="#" class="navlink">2/75</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="uk-accordion-title" href>DETALJER</a>
+                                    <div class="uk-accordion-content">
+                                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="uk-accordion-title" href>PLACERING</a>
+                                    <div class="uk-accordion-content">
+                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="uk-accordion-title" href>ΕΚΟΝΟΜΙ</a>
+                                    <div class="uk-accordion-content">
+                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="uk-accordion-title" href>ÖVRIGT</a>
+                                    <div class="uk-accordion-content">
+                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <!---------- pagination ----------------->
                     <div class="paginationWrapper">

@@ -1,3 +1,13 @@
+
+$('.my-table-model').hide();
+  
+$('.tr-click-model').click(function(){
+  $('.my-table-model').toggle();
+});
+$('.closeDialog').click(function(){
+  $('.my-table-model').hide();
+});
+
 const ctx = document.getElementById('myChart');
 const data = {
   labels: ['Aktiv', 'Uilanad', 'Lager', 'Restaureras', 'Makulerad'],
@@ -44,4 +54,5 @@ new Chart(ctx, {
     }
   });
 
-  
+
+

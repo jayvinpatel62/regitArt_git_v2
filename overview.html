@@ -25,140 +25,14 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
     </head>
-    <body>
+    <body class="overview-page">
 
         <div class="wrapper grid-wrapper">
             <!---------- logo ----------------->
-            <div class="logo">
+            <a href="index.html" class="logo">
                 <img src="assets/logo.png" />
-            </div>
-            <!---------- header ----------------->
-            <header class="header">
-                <nav class="mainmenu px-3 py-2">
-                    <div uk-navbar>
-                        <ul class="uk-navbar-nav">
-                            <li class="uk-active">
-                                <a href="#" class="navlink">
-                                    <!-- <i class="bi bi-grid icon"></i> -->
-                                    <img src="assets/icons/gallery 1.png" class="img-fluid" />
-                                 View</a>
-                                 <div class="uk-navbar-dropdown filterDropdown" uk-drop="pos:bottom-left;animation: uk-animation-slide-top-small; animate-out: true">
-                                    <ul class="uk-nav uk-navbar-dropdown-nav">
-                                        <li><a href="#">TILES VIEW</a></li>
-                                        <li><a href="#">LIST VIEW</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#" class="navlink">
-                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="currentColor" d="M7 12h4V8h1v4h4v1h-4v4h-1v-4H7zM6 4h11a3 3 0 0 1 3 3v11a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3m0 1a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2z"/></svg> -->
-                                    <!-- <i class="bi bi-plus-square icon"></i>  -->
-                                    <img src="assets/icons/post 1.png" class="img-fluid" />
-                                    New Post</a>
-                            </li>
-                            <li><a href="#" class="navlink">
-                                <!-- <i class="bi bi-trash3 icon"></i>  -->
-                                <img src="assets/icons/bin 1.png" class="img-fluid" />
-                                Delete</a></li>
-                            <li>
-                                <a href="#" class="navlink">
-                                    <!-- <i class="bi bi-gear icon"></i>  -->
-                                    <img src="assets/icons/setting 1.png" class="img-fluid" />
-                                    Mass Update</a>
-                                    <div class="uk-navbar-dropdown filterDropdown" uk-drop="pos:bottom-left;animation: uk-animation-slide-top-small; animate-out: true">
-                                        <ul class="uk-nav uk-navbar-dropdown-nav">
-                                            <li><a href="#">LOAN</a></li>
-                                            <li><a href="#">INVENTORY</a></li>
-                                            <li><a href="#">LIST</a></li>
-                                            <li><a href="#">EXCEL EXPORT</a></li>
-                                            <li><a href="#">PDF</a></li>
-                                            <li><a href="#">LABELS</a></li>
-                                        </ul>
-                                    </div>
-                            </li>
-                            <li><a href="#" class="navlink">
-                                <!-- <i class="bi bi-pencil icon"></i>  -->
-                                <img src="assets/icons/CREATE 1.png" class="img-fluid" />
-                                Create</a></li>
-                            <li><a href="#" class="navlink">
-                                <!-- <i class="bi bi-columns icon"></i>  -->
-                                <img src="assets/icons/layout 1.png" class="img-fluid" />
-                                Change Page Layout</a></li>
-                            <li>
-                                <a href="#" class="navlink">
-                                    <!-- <i class="bi bi-flag icon"></i>  -->
-                                <img src="assets/icons/red-flag 1.png" class="img-fluid" />
-                                    Flagged Works</a>
-                                <div class="uk-navbar-dropdown filterDropdown" uk-drop="pos:bottom-left;animation: uk-animation-slide-top-small; animate-out: true">
-                                    <ul class="uk-nav uk-navbar-dropdown-nav">
-                                        <li><a href="#">FIND FLAGGED WORKS</a></li>
-                                        <li><a href="#">DE-SELECT ALL</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li><a href="#" class="navlink">
-                                <!-- <i class="bi bi-search icon"></i>  -->
-                                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="m18 12.52l1 1v5.865q0 .69-.462 1.152T17.384 21H4.616q-.691 0-1.153-.462T3 19.385V6.615q0-.69.463-1.152T4.615 5h5.366q-.085.277-.117.52T9.8 6H4.615q-.23 0-.423.192T4 6.616v12.769q0 .23.192.423t.423.192h12.77q.23 0 .423-.192t.192-.423zm.454-3.774l3.315 3.316l-.707.707l-3.316-3.315q-.448.396-1.038.587t-1.208.19q-1.567 0-2.649-1.082T11.769 6.5t1.082-2.649T15.5 2.769t2.649 1.082T19.231 6.5q0 .675-.21 1.237q-.21.561-.567 1.01M15.5 9.23q1.146 0 1.939-.792T18.23 6.5t-.793-1.939T15.5 3.77t-1.939.793T12.77 6.5t.792 1.939t1.939.792M4 12.519V20V6v6.23v-.28z"/></svg> -->
-                                <img src="assets/icons/Vector.png" class="img-fluid" />
-                                Advanced Search
-                            </a></li>
-                        </ul>
-                    </div>
-                   
-                    <div class="uk-inline">
-                        <button class="btn btn-outline-light navbar-search" type="button">
-                            <i class="bi bi-search icon"></i>
-                        </button>
-                        <div class="searchDropdown uk-card uk-card-body uk-card-default" uk-drop="mode: click;pos:top-right">
-                            <button class="uk-drop-close" type="button" uk-close></button>
-                            <div class="imgBox">
-                                <img src="assets/2.jpg" alt="" class="img-fluid">
-                                <p class="text">RIW-789, SANDOR SANDSTRÖM SAND, HUVUDET I SANDEN</p>
-                            </div>
-                            <ul uk-accordion class="arrow">
-                                <li>
-                                    <a class="uk-accordion-title" href>GENERELLT</a>
-                                    <div class="uk-accordion-content">
-                                        <ul class="uk-nav">
-                                            <li><a href="#" class="navlink">Sandor Sandström Sand</a></li>
-                                            <li><a href="#" class="navlink">Huvudet i sanden</a></li>
-                                            <li><a href="#" class="navlink">1979</a></li>
-                                            <li><a href="#" class="navlink">Fotografi</a></li>
-                                            <li><a href="#" class="navlink">C-print med aluminiumram</a></li>
-                                            <li><a href="#" class="navlink">32 x 32 cm</a></li>
-                                            <li><a href="#" class="navlink">2/75</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a class="uk-accordion-title" href>DETALJER</a>
-                                    <div class="uk-accordion-content">
-                                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a class="uk-accordion-title" href>PLACERING</a>
-                                    <div class="uk-accordion-content">
-                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a class="uk-accordion-title" href>ΕΚΟΝΟΜΙ</a>
-                                    <div class="uk-accordion-content">
-                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a class="uk-accordion-title" href>ÖVRIGT</a>
-                                    <div class="uk-accordion-content">
-                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </header>
+            </a>
+           
             <!---------- sidebar ----------------->
             <aside class="sidebar">
                 <a href="" class="notifiaction-icon">
@@ -167,11 +41,11 @@
                 </a>
                <div class="offset-sidebar">
                     <ul class="uk-nav uk-nav-default" uk-nav>
-                        <li class="item"><a href="#">Overview</a></li>
-                        <li class="item uk-parent uk-open">
-                            <a class="uk-active" href="#">Artworks</a>
+                        <li class="item uk-active"><a href="overview.html">Overview</a></li>
+                        <li class="item uk-parent">
+                            <a href="artwork_tileview.html">Artworks</a>
                             <ul class="uk-nav-sub">
-                                <li class="sub-item"><a href="#">HISTORIK</a></li>
+                                <li class="sub-item"><a href="artwork_tileview.html">HISTORIK</a></li>
                                 <li class="sub-item"><a href="#">PAPPERSKORG</a></li>
                                 <li class="sub-item"><a href="#">UTLÅNINGAR</a></li>
                                 <li class="sub-item"><a href="#">INVENTERINGSLISTOR</a></li>
@@ -187,7 +61,7 @@
 
                 <ul class="uk-nav uk-nav-default">
                     <li class="item"><a href="#">konstnärsdatabasen</a></li>
-                    <li class="item"><a href="#">User Profile</a></li>
+                    <li class="item"><a href="#" uk-toggle="target: #modal-changePass">User Profile</a></li>
                     <li class="item"><a href="#">Change language</a></li>
                     <li class="item"><a href="#">Log Out</a></li>
                 </ul>
@@ -196,7 +70,7 @@
             <main class="main">
                <div class="innerBetween bg-white-box">
                     <div class="overview-wrapper overview-grid">
-                        <div class="overview-item">
+                        <div class="overview-item overview-1">
                             <h2 class="title">ANVÄNDARINFORMATION</h2>
                             <table class="uk-table">
                                 <tr>
@@ -261,7 +135,9 @@
                             </table>
                         </div>
 
-                        <div class="overview-item">
+                        <div class="border vr"></div>
+
+                        <div class="overview-item overview-2">
                             <h2 class="title">OVERSIKT</h2>
 
                             <div class="chartWrapper">
@@ -293,31 +169,34 @@
                             </div>
                            
                         </div>
-                        <div class="overview-item">
+
+                        <div class="border hz"></div>
+
+                        <div class="overview-item overview-3">
                             <h2 class="title">ANVÄNDARINFORMATION</h2>
-                            <br>
+                            <div class="spacer-40"></div>
                             <div class="info-content">
                                 <p><b>2024-01-27:</b> Hôn ngeluncioner var förbattras</p>
                                 <a href="" class="link">LÄS MER</a>
                             </div>
-                            <br>
+                            <div class="spacer-40"></div>
                             <div class="info-content">
                                 <p><b>2024-01-15:</b> Det gir längre alt ledse, upp fler med specialtecken eller mellareleg</p>
                                 <a href="" class="link">LAS MEN</a>
                             </div>
-                            <br>
+                            <div class="spacer-50"></div>
                             <button class="btn btn-primary">UPPDATERINGSLOGG</button>
                         </div>
 
-                        <div class="overview-item">
-                           
+                        <div class="border vr vr2"></div>
+
+                        <div class="overview-item overview-4">
                             <div class="info-content">
                                 <h2 class="title">ETIKETTER</h2>
                                 <p>Duwer eäl att ni kar beställa korelverksaikaller får oss? Elikalterra svies at på ceständigt man izi som inte sadar basidan av amen.</p>
                                 <button class="btn btn-primary">UPPDATERINGSLOGG</button>
                             </div>
-                            <br>
-                            <br>
+                           <div class="spacer-100"></div>
                             <div class="info-content">
                                 <h2 class="title">KONSTPORTALERNA</h2>
                                 <p>Skicka ett mail till support@riwsoftware.com om ni är intresserade av att visa era verk antingen offentligt eller internt.</p>
@@ -330,6 +209,30 @@
             </main>
         </div>
         <div class="footer copyright">@2024 REGITART | ALL RIGHTS RESERVED</div>
+
+        <!-- This is the modal -->
+        <div id="modal-changePass" class="uk-flex-top" uk-modal>
+            <div class="uk-modal-dialog uk-margin-auto-vertical uk-modal-body custom-dialog-sm">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <div class="modal-title">CHANGE PASSWORD</div>
+                <div class="spacer-50"></div>
+                <form >
+                    <div class="form-inline">
+                        <label class="label-text" for="form-text">New Password</label>
+                        <input class="form-control" id="form-text" type="text" placeholder="">
+                    </div>
+
+                    <div class="form-inline">
+                        <label class="label-text" for="form-text">Repeat Password</label>
+                        <input class="form-control" id="form-text" type="text" placeholder="">
+                    </div>
+                </form>
+                <br>
+                <div class="text-center">
+                    <button class="btn btn-primary" style="min-width: 200px;height: 56px;">SAVE</button>
+                </div>
+            </div>
+        </div>
 
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
